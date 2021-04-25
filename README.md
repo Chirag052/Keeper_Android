@@ -13,7 +13,7 @@ The mobile sections of this guide focus on Android devices and currently, you ca
 <img src="https://user-images.githubusercontent.com/71426030/115999901-7011d500-a60b-11eb-9337-0148d6dfbfa1.jpeg" width="200" height="400" />
 <img src="https://user-images.githubusercontent.com/71426030/115999903-70aa6b80-a60b-11eb-84d9-c052a7628049.jpeg" width="200" height="400" />
 <img src="https://user-images.githubusercontent.com/71426030/115999902-70aa6b80-a60b-11eb-8a00-95154a6d0780.jpeg" width="200" height="400" />
-</p>
+	</p>
 
 ## <h2><br/>Techstack - libraries used:hammer: :
 * AndroidX - Android library for core functionalities.
