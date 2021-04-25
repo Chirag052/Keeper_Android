@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+   >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:id="@+id/v_color"
+        android:background="#000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_code"
+        android:text="#000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_value"
+        android:text="RGB (0, 0, 0)"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"/>
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sb_red"
+        android:max="255"
+        android:thumbTint="#FF0000"
+        android:progressTint="#FF0000"
+        android:layout_marginTop="16dp"/>
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sb_green"
+        android:max="255"
+        android:thumbTint="#00FF00"
+        android:progressTint="#00FF00"
+        android:layout_marginTop="16dp"/>
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sb_blue"
+        android:max="255"
+        android:thumbTint="#0000FF"
+        android:progressTint="#0000FF"
+        android:layout_marginTop="16dp"/>
+
+
+</LinearLayout>

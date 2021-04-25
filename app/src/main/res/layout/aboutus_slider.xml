@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+ >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="40dp"
+        android:backgroundTint="@android:color/white"
+        android:background="@drawable/rectangle_black">
+
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_width="match_parent"
+            android:layout_height="317dp"
+            android:contentDescription="@string/sample_image_description"
+            android:src="@drawable/aksh" />
+        <TextView
+            android:id="@+id/name"
+            android:text="Mohit Chug (Mentor)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/margin_8"
+            android:layout_marginTop="@dimen/margin_16"
+            android:textSize="@dimen/text_20"
+            android:textColor="@android:color/black"/>
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/name"
+            android:textSize="@dimen/text_16"
+            android:text="developer"
+            android:textColor="@android:color/black"/>
+        <LinearLayout
+            android:id="@+id/gmailinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/desc"
+            android:layout_marginTop="32dp">
+        <ImageView
+            android:layout_width="@dimen/margin_24"
+            android:layout_height="24dp"
+            android:id="@+id/gmail"
+            android:src="@drawable/gmail"
+            android:contentDescription="@string/sample_image_description"
+            android:layout_marginStart="30dp"/>
+        <TextView
+            android:id="@+id/mailid"
+            android:textColor="@color/textColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="akshmehta576@gmail.com"
+            android:layout_marginStart="@dimen/margin_16"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linkedin_info_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/gmailinfo"
+            android:layout_marginTop="@dimen/margin_16">
+        <ImageView
+            android:layout_width="@dimen/margin_24"
+            android:layout_height="24dp"
+            android:id="@+id/linkedin"
+            android:src="@drawable/linkedin"
+            android:layout_marginStart="30dp"
+            android:contentDescription="@string/sample_image_description"
+            />
+        <TextView
+            android:id="@+id/linkedin_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColor"
+            android:text="https://www.linkedin.com/in/mohitchug07"
+            android:layout_marginStart="@dimen/margin_16"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/margin_16"
+            android:layout_below="@+id/linkedin_info_container">
+        <ImageView
+            android:layout_width="@dimen/margin_24"
+            android:layout_height="24dp"
+            android:id="@+id/person"
+            android:src="@drawable/user"
+            android:layout_marginStart="30dp"
+            android:contentDescription="@string/sample_image_description"
+            />
+        <TextView
+            android:id="@+id/phone_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColor"
+            android:text="+91 6376651155"
+            android:layout_marginStart="@dimen/margin_16"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

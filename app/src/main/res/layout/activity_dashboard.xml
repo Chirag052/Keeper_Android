@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer"
+    tools:openDrawer="start"
+    android:background="@android:color/white"
+    tools:context=".Dashboard">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_baseline_add_24"
+            android:backgroundTint="@color/colorAccentDark"
+            app:maxImageSize="36dp"
+            android:layout_marginEnd="@dimen/margin_24"
+            android:layout_marginBottom="@dimen/margin_24"
+            />
+        <!--    <androidx.appcompat.widget.SearchView-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="60dp"-->
+        <!--        android:id="@+id/search_bar"-->
+        <!--        />-->
+
+        <RelativeLayout
+            android:id="@+id/search_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_50"
+            android:layout_marginHorizontal="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_8"
+            android:background="@drawable/rectangle_black"
+
+            >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_16"
+                android:layout_marginTop="@dimen/margin_8"
+                android:layout_marginEnd="@dimen/margin_16"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_20" />
+
+            <TextView
+                android:id="@+id/body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:layout_marginStart="@dimen/margin_16"
+                android:layout_marginTop="@dimen/margin_8"
+                android:layout_marginEnd="@dimen/margin_16"
+                android:layout_marginBottom="@dimen/margin_12"
+                android:textSize="@dimen/text_16" />
+
+<!--            <ImageView-->
+<!--                android:id="@+id/navigation_drawer"-->
+<!--                android:layout_width="@dimen/margin_24"-->
+<!--                android:layout_height="@dimen/margin_24"-->
+<!--                android:layout_margin="@dimen/margin_12"-->
+<!--                android:src="@drawable/ic_baseline_menu_24"-->
+<!--                android:clickable="true"-->
+<!--                />-->
+            <EditText
+                android:id="@+id/search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/btnOpenDrawer"
+                android:hint="Search your notes"
+                android:background="@null"
+                android:layout_marginTop="@dimen/margin_12"
+                android:layout_marginHorizontal="@dimen/margin_8"
+                />
+            <ImageView
+                android:id="@+id/account"
+                android:layout_width="@dimen/margin_40"
+                android:layout_height="@dimen/margin_40"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="@dimen/margin_12"
+                android:src="@drawable/ic_baseline_account_circle_24"
+                android:clickable="true"
+                />
+
+            <com.techone.keeper.CustomDrawerButton
+                android:id="@+id/btnOpenDrawer"
+                android:layout_width="@dimen/margin_24"
+                android:layout_height="@dimen/margin_24"
+                android:layout_marginStart="@dimen/margin_12"
+                android:layout_marginTop="@dimen/margin_12"
+                android:layout_marginEnd="@dimen/margin_12"
+                android:layout_marginBottom="@dimen/margin_12"
+                android:background="@android:color/white"
+                android:drawableStart="@drawable/ic_baseline_menu_24"
+                />
+        </RelativeLayout>
+
+
+
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/refresh"
+            android:layout_below="@id/search_bar"
+            >
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pinned"
+                        android:textSize="@dimen/text_12"
+                        android:id="@+id/pinned_title"
+                        android:textStyle="bold"
+                        android:layout_alignParentTop="true"
+                        android:textColor="@android:color/darker_gray"
+                        android:layout_marginBottom="@dimen/margin_8"
+                        android:layout_marginTop="@dimen/margin_20"
+
+                        android:layout_marginStart="@dimen/margin_20"
+                        android:layout_marginEnd="@dimen/margin_20"
+                        />
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/pinned_title"
+                        android:id="@+id/pinned_recycler_view"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/others"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/text_12"
+                        android:id="@+id/others_title"
+                        android:layout_below="@id/pinned_recycler_view"
+                        android:textColor="@android:color/darker_gray"
+                        android:layout_marginBottom="@dimen/margin_8"
+                        android:layout_marginTop="@dimen/margin_20"
+                        android:layout_marginStart="@dimen/margin_20"
+                        android:layout_marginEnd="@dimen/margin_20"
+                        />
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/others_title"
+                        android:id="@+id/other_recycler_view"
+                        />
+                </RelativeLayout>
+            </ScrollView>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/loader"
+            android:backgroundTint="@color/colorAccentDark"
+            android:progressDrawable="@color/colorAccentDark"
+            android:progressBackgroundTint="@color/colorAccentDark"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/warning_container"
+            android:visibility="gone"
+            >
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/undraw_no_data"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/no_data_image"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_below="@id/no_data_image"
+                android:text="@string/no_data"
+                android:textSize="@dimen/text_20"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/navmenu"
+        app:menu="@menu/navigation_drawer_menu"
+        app:headerLayout="@layout/navheader"
+        android:layout_gravity="start"/>
+</androidx.drawerlayout.widget.DrawerLayout>

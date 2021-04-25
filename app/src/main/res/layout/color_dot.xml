@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/margin_36"
+    android:layout_height="@dimen/margin_36"
+    android:id="@+id/color_view"
+    android:layout_marginStart="@dimen/margin_8"
+    android:layout_marginEnd="@dimen/margin_8"
+    >
+<!--    <View-->
+<!--        android:layout_width="@dimen/margin_24"-->
+<!--        android:layout_height="@dimen/margin_24"-->
+<!--        android:backgroundTint="@color/colorAccentDark"-->
+<!--        android:background="@color/colorAccent"-->
+<!--        -->
+<!--        />-->
+
+
+<!--        <ImageView-->
+<!--            android:layout_width="@dimen/margin_24"-->
+<!--            android:layout_height="@dimen/margin_24"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:src="@drawable/icons8_red_circle_100"-->
+<!--            android:id="@+id/holdview"-->
+<!--            />-->
+    <ImageView
+        android:layout_width="@dimen/margin_16"
+        android:layout_height="@dimen/margin_16"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:src="@drawable/ic_baseline_check_24"
+        android:id="@+id/checked"
+        />
+
+
+
+</RelativeLayout>

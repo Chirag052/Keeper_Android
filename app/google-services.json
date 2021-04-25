@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "880721816321",
+    "project_id": "keeper-8e19d",
+    "storage_bucket": "keeper-8e19d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:880721816321:android:10563e55cfe4b9dccc4900",
+        "android_client_info": {
+          "package_name": "com.techone.keeper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "880721816321-esilco74cn7ka1uju1eqbak7ln4iv66q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.techone.keeper",
+            "certificate_hash": "9fe05f192cf9f96f90a4a86154c1228aeb9e9c08"
+          }
+        },
+        {
+          "client_id": "880721816321-0h0nr17ohau2l5kpgt4cocvmfvb3lqc2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxP6gqZOO6x7lam6BmAN8b8X5dX_pPr9U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "880721816321-0h0nr17ohau2l5kpgt4cocvmfvb3lqc2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

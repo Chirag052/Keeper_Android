@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Keeper</string>
+
+    <string name="sample_image_description">This is a sample image Description.</string>
+    <string name="notes">Notes</string>
+    <string name="title">Title</string>
+    <string name="pinned">PINNED</string>
+    <string name="others">OTHERS</string>
+    <string name="no_data">No Data Found</string>
+    <string name="archive_notes">Your archived notes appear here</string>
+    <string name="open" />
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+    <string name="slide_1_title">Keeper</string>
+    <string name="slide_1_desc">Welcome to Keeper</string>
+    <string name="slide_2_title">Add your Notes</string>
+    <string name="slide_2_desc">You can create your personal notes</string>
+    <string name="slide_3_title">Multiple features</string>
+    <string name="slide_3_desc">Colour, pin and archive your note by just one click</string>
+    <string name="slide_4_title">Thank You</string>
+    <string name="slide_4_desc">Hope you enjoy our Services!</string>
+    <string name="close">Close</string>
+</resources>
