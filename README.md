@@ -7,13 +7,13 @@ With Keeper, you can create, share, pin, archive, and add favorite colors to you
 The mobile sections of this guide focus on Android devices and currently, you can't run this app in dark mode.
 
 ## <h2><br/>ScreenShots:iphone: :
-	<p float="right">
+	
 <img src="https://user-images.githubusercontent.com/71426030/115999410-3a6bec80-a609-11eb-9a94-5038c245fb1c.jpeg" width="200" height="400" />
 <img src="https://user-images.githubusercontent.com/71426030/115999899-6e481180-a60b-11eb-9525-b7e8a1c69292.jpeg" width="200" height="400" />
 <img src="https://user-images.githubusercontent.com/71426030/115999901-7011d500-a60b-11eb-9337-0148d6dfbfa1.jpeg" width="200" height="400" />
 <img src="https://user-images.githubusercontent.com/71426030/115999903-70aa6b80-a60b-11eb-84d9-c052a7628049.jpeg" width="200" height="400" />
 <img src="https://user-images.githubusercontent.com/71426030/115999902-70aa6b80-a60b-11eb-8a00-95154a6d0780.jpeg" width="200" height="400" />
-	</p>
+	
 
 ## <h2><br/>Techstack - libraries used:hammer: :
 * AndroidX - Android library for core functionalities.
