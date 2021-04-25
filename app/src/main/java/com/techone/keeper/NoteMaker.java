@@ -346,6 +346,13 @@ public class NoteMaker extends AppCompatActivity implements SeekBar.OnSeekBarCha
         }
 
         );
+        sheetView.findViewById(R.id.labelbutton).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(NoteMaker.this, "Coming soon", Toast.LENGTH_SHORT).show();
+            }
+        });
+
         sheetView.findViewById(R.id.colorpicker).setOnClickListener(new View.OnClickListener() {
 
             @Override
